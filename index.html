@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MOTP</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    html {
+      margin: 0;
+      padding: 0;
+      min-width: 300px;
+      min-height: 350px;
+    }
+
+    body,
+    button {
+      margin: 0;
+      padding: 10px;
+      font-size: 20px !important;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    button {
+      width: 100%;
+      border-radius: 4px;
+      border: 1px solid #aaa;
+      background-color: lightskyblue;
+      cursor: pointer;
+    }
+
+    button:hover {
+      color: #fff;
+      background-color: lightsteelblue;
+    }
+
+    input[type="text"] {
+      width: 95%;
+      margin: 0;
+      padding: 6px;
+      font-size: 16px !important;
+    }
+
+    .popup {
+      padding: 20px;
+    }
+
+    #password-text {
+      padding: 10px;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      background-color: #eee;
+      color: red;
+      text-align: center;
+      font-size: 36px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>Pin</div>
+  <input type="text" id="pin" name="pin" class="form-control" value="" />
+  <div>
+    <div>Secret</div>
+    <input type="text" id="secret" name="secret" value="" class="form-control" />
+  </div>
+  <div>
+    <label style="float: right">
+      <input type="checkbox" id="save" name="save" checked="checked" />
+      Local Save
+    </label>
+  </div>
+  <div style="clear: both"></div>
+
+  <div>
+    <button id="copy" class="btn btn-success">Copy</button>
+  </div>
+  <hr />
+
+  <div>
+    <label>Password</label>
+    <i id="copied" class="fa fa-clipboard" aria-hidden="true" style="display:none;"></i>
+
+    <div id="password-text"></div>
+  </div>
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/popup.js"></script>
+</body>
+
+</html>
