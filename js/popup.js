@@ -31,8 +31,8 @@ $(function () {
       oldPassword = password;
       $("#copied").hide();
       $("#password-text").html(password);
+	  copyPassword();
     }
-    copyPassword();
   }
 
   function copyPassword() {
