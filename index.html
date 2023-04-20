@@ -10,7 +10,7 @@
       margin: 0;
       padding: 0;
       min-width: 300px;
-      min-height: 350px
+      min-height: 300px
     }
 
     body,
@@ -49,45 +49,38 @@
       background-color: #eee;
       color: red;
       text-align: center;
-      font-size: 50px
+      font-size: 50px;
+      cursor: pointer;
     }
   </style>
 </head>
 
 <body>
-  <div>Pin (4 碼數字)</div>
+  <div>Pin (4pin)</div>
   <input type="text" id="pin" name="pin" class="form-control" value="" />
   <div>
-    <div>Secret (16 碼密鑰)</div>
+    <div>Secret (16pin)</div>
     <input type="text" id="secret" name="secret" value="" class="form-control" />
   </div>
   <div>
     <label style="float: right">
       <input type="checkbox" id="save" name="save" checked="checked" />
-      儲存本機
+      Save
     </label>
   </div>
   <div style="clear: both"></div>
-
-  <div>
-    <button id="copy" class="btn btn-success">Copy</button>
-  </div>
   <hr />
-
   <div>
-    <label style="float:left">Password</label>
-    <label style="float:right">
-      <i id="copied" style="display:none;color:darkslategrey">
-        <svg width="20" height="20" viewBox="0 0 512 512">
-          <path fill="currentColor"
-            d="M288 448H64V224h64v-64H64c-35.3 0-64 28.7-64 64v224c0 35.3 28.7 64 64 64h224c35.3 0 64-28.7 64-64v-64h-64v64zm-64-96h224c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H224c-35.3 0-64 28.7-64 64v224c0 35.3 28.7 64 64 64z" />
-        </svg></i>
-    </label>
+    <label>Password</label>
     <div style="clear:both"></div>
-
+    <div id="copied" style="float:right;display:none;color:darkslategrey;padding:4px">
+      <svg width="20" height="20" viewBox="0 0 512 512">
+        <path fill="currentColor"
+          d="M288 448H64V224h64v-64H64c-35.3 0-64 28.7-64 64v224c0 35.3 28.7 64 64 64h224c35.3 0 64-28.7 64-64v-64h-64v64zm-64-96h224c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H224c-35.3 0-64 28.7-64 64v224c0 35.3 28.7 64 64 64z" />
+      </svg>
+    </div>
     <div id="password-text"></div>
   </div>
 </body>
 <script src="index.js"></script>
-
 </html>

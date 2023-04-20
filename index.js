@@ -4,9 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (localStorage.getItem("save")) {
         document.querySelector("#pin").value = localStorage.getItem("pin");
         document.querySelector("#secret").value = localStorage.getItem("secret");
-        document.querySelector("#save").checked = true;
-        document.querySelector("#copy").addEventListener("click", copyPassword);
     }
+    document.querySelector("#password-text").addEventListener("click", copyPassword);
 
     function genPassword() {
         var pin = document.querySelector("#pin").value;
@@ -42,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.querySelector("#copied").style.display = "block";
             })
             .catch((err) => {
-                console.log("copy error", err);
+                console.error("copy error", err);
             });
     }
 
