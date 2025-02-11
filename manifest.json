@@ -1,13 +1,14 @@
 {
-  "author": "KuoAnn",
-  "description": "MOTP Authorization",
-  "icons": {
-    "128": "icon.png"
-  },
-  "manifest_version": 3,
-  "name": "MOTP",
-  "version": "1.0.0",
-  "action": {
-    "default_popup": "index.html"
-  }
+    "manifest_version": 3,
+    "name": "MOTP",
+    "author": "KuoAnn",
+    "version": "1.0.0",
+    "description": "Generate MOTP for authorization",
+    "icons": {
+        "128": "icon128.png"
+    },
+    "action": {
+        "default_popup": "images/index.html"
+    },
+    "permissions": ["storage"]
 }

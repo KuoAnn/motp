@@ -4,7 +4,7 @@
 <head>
   <title>MOTP</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="images/icon.png" type="image/x-icon" />
   <style>
     html {
       margin: 0;
@@ -57,10 +57,10 @@
 
 <body>
   <div>Pin (4pin)</div>
-  <input type="text" id="pin" name="pin" class="form-control" value="" />
+  <input type="text" id="pin" name="pin" class="form-control" value="" maxlength="4" />
   <div>
     <div>Secret (16pin)</div>
-    <input type="text" id="secret" name="secret" value="" class="form-control" />
+    <input type="text" id="secret" name="secret" value="" class="form-control" maxlength="16" />
   </div>
   <div>
     <label style="float: right">
@@ -82,5 +82,5 @@
     <div id="password-text"></div>
   </div>
 </body>
-<script src="index.js"></script>
+<script src="popup.js"></script>
 </html>
