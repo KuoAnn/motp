@@ -5,10 +5,10 @@
     "version": "1.0.0",
     "description": "Generate MOTP for authorization",
     "icons": {
-        "128": "icon128.png"
+        "128": "images/icon128.png"
     },
     "action": {
-        "default_popup": "images/index.html"
+        "default_popup": "index.html"
     },
     "permissions": ["storage"]
 }
