@@ -4,4 +4,4 @@ Generate MOTP for authorization
 
 ## Example
 
-![image](./images/demo.png)
+![image](./store/demo.png)
